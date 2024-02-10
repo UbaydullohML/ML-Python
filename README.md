@@ -29,4 +29,9 @@ Functions
         output_var = input_var + 3
         return output_var
 
+    new_number = add_three(10)
+    print(new_number)
+
+
+    def get_pay(n_hours)
     
