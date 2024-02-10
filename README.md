@@ -1,8 +1,8 @@
 # Python-Kaggle
 
 ## Table of contents
-* [Intro-Programming](intro-programming)
-* [Python](python)
+* [Intro-Programming](#intro-programming)
+* [Python](#python)
   
 ## Intro-Programming
 
@@ -25,6 +25,8 @@ Arithmetic and Variables
     
 Functions 
 
+![image](https://github.com/UbaydullohML/Python-Kaggle/assets/75980506/acd4b041-e13c-4250-8aee-3a8a5b1bef91)
+
     def add_threee=(input_var):
         output_var = input_var + 3
         return output_var
@@ -34,4 +36,31 @@ Functions
 
 
     def get_pay(n_hours)
+        pretax = n_hours * 15
+        aftertax = pretax * (1-.12)
+        return aftertax
+
+    pay = get_pay(40)
+    print(pay)
+    pay = get_pay(32)
+    print(pay)
+
+    def get_pay_with_more_inputs(num_hours, hourly_wage, tax_bracket):
+        # Pre-tax pay
+        pay_pretax = num_hours * hourly_wage
+        # After-tax pay
+        pay_aftertax = pay_pretax * (1 - tax_bracket)
+        return pay_aftertax
+
+    higher_pay_aftertax = get_pay_with_more_inputs(40, 24, .22)
+    print(higher_pay_aftertax)
+
+    # Define the function with no arguments and with no return
+    def print_hello():
+        print("Hello, you!")
+        print("Good morning!")
+    
+    # Call the function
+    print_hello()
+
     
