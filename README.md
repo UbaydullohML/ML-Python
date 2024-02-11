@@ -43,7 +43,7 @@ Functions
     pay = get_pay(40)
     print(pay)
     pay = get_pay(32)
-    print(pay)
+    print(pay) 
 
     def get_pay_with_more_inputs(num_hours, hourly_wage, tax_bracket):
         # Pre-tax pay
@@ -62,5 +62,8 @@ Functions
     
     # Call the function
     print_hello()
+
+
+Data types
 
     
